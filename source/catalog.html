@@ -8,6 +8,82 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+   <header class="page__header page-header">
+    <nav class="page-header__nav">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Кет энерджи.">
+        <img class="logo__sign" src="images/icons/logo.svg" width="101" height="18" alt="" aria-hidden="true">
+      </a>
+
+      <button class="page-header__toggler-open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
+      <ul class="page-header__menu site-menu">
+        <li class="site-menu__item">
+          <a href="index.html">главная</a>
+        </li>
+        <li class="site-menu__item">
+          <a href="catalog.html">каталог продукции</a>
+        </li>
+        <li class="site-menu__item site-menu__item--active">
+          <a href="#">подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<main>
+
+
+  <footer class="page-main__footer contacts">
+    <h2 class="visually-hidden">Контакты</h2>
+
+    <p class="contacts__heading">приглашаем
+      к сотрудничеству
+      дилеров!</p>
+    <address class="contacts__address">ул. Большая
+      Конюшенная, д. 19/8
+
+      Санкт-Петербург</address>
+
+    <img class="contacts__map" src="images/map.png" width="320" height="362" alt="Карта к нашему офису">
+  </footer>
+</main>
+
+
+
+  <footer class="page__footer page-footer">
+    <a class="page-footer__logo logo" href="index.html">
+      <img class="logo__image" src="images/icons/footer-logo.svg" width="128" height="24" alt="Cat Energy">
+    </a>
+
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </li>
+    </ul>
+
+    <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="visually-hidden">Разработано в</span>
+      HTML Academy
+      <img class="developer__image" src="images/icons/html-academy.svg" width="27" height="34" alt=""
+        aria-hidden="true">
+    </a>
+  </footer>
+
+
   </body>
 </html>
+

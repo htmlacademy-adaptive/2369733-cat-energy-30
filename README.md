@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Игорь Щербаков](https://up.htmlacademy.ru/adaptive/30/user/2369733).
-* Наставник: "[Максим Миронов](https://htmlacademy.ru/profile/id1336881) .
+* Наставник: [Максим Миронов](https://htmlacademy.ru/profile/id1336881) .
 
 ---
 

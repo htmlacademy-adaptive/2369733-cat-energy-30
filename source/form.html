@@ -6,6 +6,10 @@
   <title>Кэт энерджи: Подбор программы</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -13,13 +17,11 @@
   <header class="page__header page-header">
 
     <div class="page-header__container-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__image" src="images/icons/logo-mobile.svg" width="33" height="38" alt="Логотип Кет энерджи.">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__image" src="#" width="33" height="38" alt="Логотип Кет энерджи.">
       </a>
 
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__sign" src="images/icons/logo.svg" width="101" height="18" alt="Логотип Кет энерджи" aria-hidden="true">
-      </a>
+      <img class="page-header__sign" src="#" width="101" height="18" alt="" aria-hidden="true">
 
       <button class="page-header__toggler-open" type="button">
         <span class="visually-hidden">Открыть меню.</span>
@@ -29,29 +31,29 @@
 
     <nav class="page-header__nav">
       <ul class="page-header__menu site-menu">
-        <li class="site-menu__item site-menu__item--active">
-          <a href="index.html">главная</a>
+        <li class="site-menu__item">
+          <a class="site-menu__link site-menu__link--active" href="index.html">главная</a>
         </li>
         <li class="site-menu__item">
-          <a href="catalog.html">каталог продукции</a>
+          <a class="site-menu__link" href="catalog.html">каталог продукции</a>
         </li>
         <li class="site-menu__item">
-          <a href="#">подбор программы</a>
+          <a class="site-menu__link" href="#" aria-current="page" tabindex="-1">подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
 
   <main class="page__main page-main">
-    <h1 class="page-main__heading">Подбор программы</h1>
+    <h1 class="page-main__heading common-heading">Подбор программы</h1>
     <p class="page-main__subheading">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
 
     <section class="page__form form">
       <h2 class="visually-hidden">Форма анкеты.</h2>
 
-      <form class="form__body form-body" method="post" action="https://echo.htmlacademy.ru/">
-        <fieldset class="form__group field-group">
+      <form class="form__body container" method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="form__group form__group--cat field-group">
           <legend class="visually-hidden">Данные кота.</legend>
 
           <ul class="field-group__list">
@@ -102,7 +104,7 @@
         </fieldset>
 
         <fieldset class="form__group field-group">
-          <legend class="field-group__heading">Контактные данные
+          <legend class="field-group__heading underlined-heading">Контактные данные
             (владельца кота)</legend>
 
           <ul class="field-group__list">
@@ -122,13 +124,13 @@
         </fieldset>
 
         <div class="form__group field-group">
-          <label class="field-group__heading" for="comment">Комментарий</label>
+          <label class="field-group__heading underlined-heading" for="comment">Комментарий</label>
           <textarea class="field-group__input" name="comment" id="comment" rows="5"
-            placeholder="Расскажите обо всех повАдках кота"></textarea>
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
         <fieldset class="form__group field-group">
-          <legend class="visually-hidden">Дополнительно.</legend>
+          <legend class="field-group__heading underlined-heading">Дополнительно.</legend>
 
           <ul class="field-group__list">
             <li class="field-group__item">
@@ -174,11 +176,9 @@
     </footer>
   </main>
 
-
-
   <footer class="page__footer page-footer">
-    <a class="page-footer__logo logo" href="#">
-      <img class="logo__image" src="images/icons/footer-logo.svg" width="128" height="24" alt="Логотип Cat Energy.">
+    <a class="page-footer__logo logo logo--footer" href="#">
+      <img class="logo__image" src="#" width="128" height="24" alt=" Логотип Cat Energy.">
     </a>
 
     <ul class="page-footer__social social">
@@ -202,11 +202,12 @@
     <div class="page-footer__developer developer">
       <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden">Разработано в</span>
-        HTML Academy.
+        HTML Academy
       </a>
-        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="developer__image" src="images/icons/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy.">
-        </a>
+      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="developer__image" src="#" width="27" height="34"
+          alt="Логотип HTML Academy.">
+      </a>
     </div>
 
   </footer>

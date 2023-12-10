@@ -1,0 +1,17 @@
+.catalog-preview__heading{
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 37px;
+  color: $color-black;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.catalog-preview__link{
+  font-family: $font-heading;
+  font-size: 20px;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-black;
+}

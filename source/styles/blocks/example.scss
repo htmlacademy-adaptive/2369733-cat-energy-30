@@ -1,3 +1,26 @@
 .example{
   background-color: $color-gray-150;
 }
+
+.example__definition{
+  font-family: $font-heading;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-black;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+}
+
+.example__title{
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__cost{
+  font-family: $font-heading;
+  color: $color-black;
+  line-height: 20px;
+  text-transform: uppercase;
+}

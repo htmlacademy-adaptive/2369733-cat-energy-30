@@ -1,12 +1,21 @@
-.hero{
-  background-color: $color-black;
-}
+.hero {
+  text-align: center;
 
-.hero__heading{
+  color: $color-white;
+  background-color: $color-primary-800;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  background-image: url(../../images/background/index-background-desktop@1x.png);
+
+  }
+
+
+.hero__heading {
   color: $color-white;
 }
 
-.hero__text{
+.hero__text {
   font-family: $font-heading;
   line-height: 14px;
   color: $color-white;

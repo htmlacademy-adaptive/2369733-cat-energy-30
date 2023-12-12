@@ -1,5 +1,6 @@
 .hero {
   text-align: center;
+
   @media (max-width: $mobile-width) {
     color: $color-white;
     background-color: $color-primary-800;
@@ -12,9 +13,10 @@
 
   @media (min-resolution: 2dppx) {
     background-repeat: no-repeat;
+    background-size: cover;
     background-image:
       linear-gradient(rgba(104, 183, 56, 50), rgba(104, 183, 56, 0.50)), url("../../images/background/index-background-mobile@2x.jpg");
-    background-size: cover;
+
   }
 
   @media (min-width: $tablet-width) {
@@ -40,17 +42,22 @@
       background-color: $color-primary-800;
       background-position: 0 100%;
       background-repeat: no-repeat;
-      background-image:   linear-gradient(rgba(104, 183, 56, 80), rgba(104, 183, 56, 0.80)), url("../../images/background/index-background-desktop@1x.jpg");
+      background-image: linear-gradient(rgba(104, 183, 56, 80), rgba(104, 183, 56, 0.80)), url("../../images/background/index-background-desktop@1x.jpg");
 
       @media (min-resolution: 2dppx) {
         background-size: auto 696px;
-        background-image:   linear-gradient(rgba(104, 183, 56, 80), rgba(104, 183, 56, 0.80)), url("../../images/background/index-background-desktop@2x.jpg");
+        background-image: linear-gradient(rgba(104, 183, 56, 80), rgba(104, 183, 56, 0.80)), url("../../images/background/index-background-desktop@2x.jpg");
       }
     }
   }
 }
 
 
+    .hero__heading {
+      @media (max-width: $tablet-width){
+        color: $color-white;
+    }
+}
 
 
 .hero__text {

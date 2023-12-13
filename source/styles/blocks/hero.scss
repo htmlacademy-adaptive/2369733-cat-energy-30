@@ -54,7 +54,7 @@
 
 
     .hero__heading {
-      @media (max-width: $tablet-width){
+      @media (max-width: $tablet-width) {
         color: $color-white;
     }
 }

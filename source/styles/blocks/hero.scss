@@ -38,10 +38,11 @@
       background-position: 0 100%;
       background-repeat: no-repeat;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background/index-background-desktop@1x.jpg");
-      @media (min-resolution: 2dppx) {
-        background-size: auto 696px;
-        background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background/index-background-desktop@2x.jpg");
-      }
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-size: auto 696px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/background/index-background-desktop@2x.jpg");
     }
   }
 }

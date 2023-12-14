@@ -1,8 +1,10 @@
 /* GLOBAL */
-@import "./global/global.scss";
 @import "./global/variables.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
 @import "./global/visually-hidden";
+
 
 /* BLOCKS */
 @import "./blocks/page";
@@ -20,10 +22,12 @@
 @import "./blocks/catalog-preview.scss";
 @import "./blocks/card-row.scss";
 @import "./blocks/card.scss";
+@import "./blocks/underlined-heading.scss";
 @import "./blocks/control.scss";
 @import "./blocks/example.scss";
 @import "./blocks/field-group";
 @import "./blocks/form";
+@import "./blocks/field";
 @import "./blocks/process.scss";
 @import "./blocks/proposal.scss";
 @import "./blocks/show-more.scss";
@@ -31,3 +35,4 @@
 @import "./blocks/page-footer";
 @import "./blocks/social.scss";
 @import "./blocks/developer.scss";
+

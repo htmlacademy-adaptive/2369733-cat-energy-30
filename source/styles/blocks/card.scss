@@ -1,0 +1,23 @@
+.card {
+  list-style: none;
+  padding: 0;
+}
+
+.card__heading {
+  font-family: $font-heading;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: $color-gray-850;
+}
+
+.card__list {
+  list-style: none;
+  padding: 0;
+}
+
+.card__description {
+  font-size: 12px;
+  line-height: 16px;
+}

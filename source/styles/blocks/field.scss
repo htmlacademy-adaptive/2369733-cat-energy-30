@@ -19,9 +19,6 @@
   text-transform: uppercase;
 }
 
-.field-group__input {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+.field__icon:hover {
+  stroke: $color-primary-500;
 }

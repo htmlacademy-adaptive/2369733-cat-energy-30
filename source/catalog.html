@@ -18,11 +18,20 @@
 
     <div class="page-header__container-header">
       <a class="page-header__logo logo" href="index.html">
-        <img class="logo__image" src="#" width="33" height="38" alt="Логотип Кет энерджи.">
+        <picture>
+          <source width="202" height="59" media="(min-width: 1240px)" srcset="images/logo-desktop.svg"
+            type="image/svg+xml">
+          <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg"
+            type="image/svg+xml">
+          <img class="logo__image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
       </a>
+      </picture>
 
-      <img class="page-header__sign" src="#" width="101" height="18" alt="" aria-hidden="true">
-
+      <a class="page-header__logo-sign" href="index.html" tabindex="-1">
+        <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page"
+          alt="Логотип Cat Energy.">
+      </a>
       <button class="page-header__toggler-open" type="button">
         <span class="visually-hidden">Открыть меню.</span>
       </button>
@@ -32,7 +41,7 @@
     <nav class="page-header__nav">
       <ul class="page-header__menu site-menu">
         <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--active" href="index.html">главная</a>
+          <a class="site-menu__link site-menu__link--active" href="index.html"  >главная</a>
         </li>
         <li class="site-menu__item">
           <a class="site-menu__link" href="#" aria-current="page" tabindex="-1">каталог продукции</a>
@@ -310,37 +319,47 @@
   </main>
 
   <footer class="page__footer page-footer">
-    <a class="page-footer__logo logo logo--footer" href="#">
-      <img class="logo__image" src="#" width="128" height="24" alt=" Логотип Cat Energy.">
-    </a>
-
-    <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <img src="#" width="27" height="17" alt="Вконтакте.">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <img src="#" width="24" height="18" alt="YouTube.">
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <img src="#" width="20" height="18" alt="Telegram.">
-        </a>
-      </li>
-    </ul>
-
-    <div class="page-footer__developer developer">
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">Разработано в</span>
-        HTML Academy
+    <div class="page-footer__container container">
+      <a class="page-footer__logo logo logo--footer" href="#">
+        <img class="logo__image" src="./images/logo-sign.svg" width="128" height="24" alt=" Логотип Cat Energy.">
       </a>
-      <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="developer__image" src="#" width="27" height="34"
-          alt="Логотип HTML Academy.">
-      </a>
+
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+            <svg width="27" height="17" viewBox="0 0 27 17">
+              <use href="./images/icons/stack.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">YouTube</span>
+            <svg width="24" height="18" viewBox="0 0 24 18">
+              <use href="./images/icons/stack.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+            <svg width="20" height="18" viewBox="0 0 20 18">
+              <use href="./images/icons/stack.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <div class="page-footer__developer developer">
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Разработано в</span>
+          HTML Academy
+        </a>
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="developer__image" src="./images/icons/stack.svg#logo-academy" width="27" height="34" alt="Логотип HTML Academy.">
+        </a>
+      </div>
     </div>
 
   </footer>

@@ -1,3 +1,11 @@
+.show-more {
+  background-image: url("../../images/icons/stack.svg#plus-mobil");
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../images/icons/stack.svg#plus-tablet-desctop");
+  }
+}
+
 .show-more__heading {
   font-family: $font-heading;
   font-size: 16px;

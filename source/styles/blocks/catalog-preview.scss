@@ -25,7 +25,7 @@
   background-image: url("../../images/icons/stack.svg#arrow");
 }
 
-.catalog-sections__heading--slim {
+.catalog-preview__heading--slim {
   &::before {
     content: "";
     position: absolute;
@@ -48,7 +48,7 @@
   }
 }
 
-.catalog-sections__heading--pro {
+.catalog-preview__heading--pro {
   &::before {
     content: "";
     position: absolute;

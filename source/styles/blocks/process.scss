@@ -26,15 +26,6 @@
     counter-increment: process;
   }
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: $color-primary-500;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
-
   &::after {
     @media (min-width: $tablet-width) {
       content: counter(process);
@@ -49,24 +40,21 @@
   }
 }
 
-.process__item--leaf::before {
-  background-size: 25px 28px;
-  background-image: url("../../images/icons/stack.svg#leaf");
+.process__icon-container {
+  width: 60px;
+  height: 60px;
+  background-color: $color-primary-500;
+  position: relative;
 }
 
-.process__item--powder::before {
-  background-size: 26px 29px;
-  background-image: url("../../images/icons/stack.svg#powder");
-}
-
-.process__item--meal::before {
-  background-size: 25px 30px;
-  background-image: url("../../images/icons/stack.svg#meal");
-}
-
-.process__item--weight::before {
-  background-size: 26px 31px;
-  background-image: url("../../images/icons/stack.svg#weight");
+.process__icon {
+  color: $color-white;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .process__text {

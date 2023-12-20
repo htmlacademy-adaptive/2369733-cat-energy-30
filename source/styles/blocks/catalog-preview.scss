@@ -1,3 +1,20 @@
+.catalog-preview__icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $color-primary-500;
+  position: relative;
+}
+
+.catalog-preview__icon {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .catalog-preview__heading {
   font-family: $font-heading;
   font-size: 24px;
@@ -23,50 +40,4 @@
   background-repeat: no-repeat;
   background-position: 108% 50%;
   background-image: url("../../images/icons/stack.svg#arrow");
-}
-
-.catalog-preview__heading--slim {
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    background-color: $color-primary-500;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: 7px;
-    width: 36px;
-    height: 50px;
-    background-image: url("../../images/icons/stack.svg#cat-slim");
-  }
-}
-
-.catalog-preview__heading--pro {
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    background-color: $color-primary-500;
-    border-radius: 50%;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 11px;
-    left: -10px;
-    width: 67px;
-    height: 28px;
-    background-image: url("../../images/icons/stack.svg#cat-pro");
-  }
 }

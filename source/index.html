@@ -14,7 +14,7 @@
 
 <body class="page__body">
 
-  <header class="page__header page-header">
+  <header class="page__header page-header page-header--main">
 
     <div class="page-header__container-header container">
       <a class="page-header__logo logo" href="#">
@@ -31,22 +31,22 @@
       <a class="page-header__logo-sign" href="#" tabindex="-1">
         <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page" alt="Логотип Cat Energy.">
       </a>
-      <button class="page-header__togler page-header__button--opened" type="button">
-        <span class="visually-hidde">Открыть меню.</span>
+      <button class="page-header__togler page-header__togler--opened" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
       </button>
 
     </div>
 
     <nav class="page-header__nav page-header__nav-closed">
-      <ul class="page-header__menu site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--active" href="#" aria-current="page" tabindex="-1">главная</a>
+      <ul class="page-header__menu ">
+        <li class="page-header__item page-header__item--active">
+          <a class="page-header__link" href="#" aria-current="page" tabindex="-1">главная</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="catalog.html">каталог продукции</a>
+        <li class="page-header__item">
+          <a class="page-header__link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="form.html">подбор программы</a>
+        <li class="page-header__item">
+          <a class="page-header__link" href="form.html">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -245,7 +245,7 @@
           <span class="visually-hidden">Разработано в</span>
           HTML Academy
         </a>
-        
+
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="developer__image" src="./images/icons/stack.svg#logo-academy" width="27" height="34" alt="Логотип HTML Academy.">
         </a>

@@ -2,6 +2,8 @@ const opened = document.querySelector('.page-header__togler--opened');
 const site = document.querySelector('.page-header__nav');
 const togler = document.querySelector('.page-header__togler');
 
+navMain.classList.remove('main-nav--nojs');
+
 opened.onclick = function () {
   opened.classList.toggle('page-header__togler--opened');
   opened.classList.toggle('page-header__togler--closed');

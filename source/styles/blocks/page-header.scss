@@ -1,9 +1,10 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  min-width: 320px;
 
   @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,17 +16,6 @@
   }
 }
 
-.page-header__nav {
-  @media (max-width: $mobile-width) {
-    position: absolute;
-    top: 70px;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-  }
-}
-
 .page-header__container-header {
   display: flex;
   justify-content: space-between;
@@ -33,7 +23,6 @@
 }
 
 .page-header__logo-sign {
-
   text-decoration: none;
   padding: 23px 20px 24px;
   align-self: center;
@@ -59,7 +48,7 @@
   text-align: center;
   padding: 0;
   margin: 0;
-  gap: 10px;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -144,4 +133,9 @@
   @media (max-width: $mobile-width) {
     display: none;
   }
+}
+
+.page-header__nav {
+  display: grid;
+  grid-template-columns: 1fr;
 }

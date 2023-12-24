@@ -7,9 +7,9 @@ opened.onclick = function () {
   opened.classList.toggle('page-header__togler--opened');
   opened.classList.toggle('page-header__togler--closed');
   if (togler.classList.contains('page-header__togler--opened')) {
-    site.classList.add('page-header__nav-closed');
+    site.classList.add('site-list__nav-closed');
   } else {
-    site.classList.remove('page-header__nav-closed');
+    site.classList.remove('site-list__nav-closed');
   }
 };
 

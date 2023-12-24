@@ -1,11 +1,28 @@
-.developer__link {
-  line-height: 20px;
+.developer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: $color-gray-700;
+
   font-size: 16px;
   text-decoration: none;
-  color: $color-gray-700;
-}
 
-.developer__image {
-  width: 27px;
-  height: 34px;
+  &:hover {
+    opacity: 0.6;
+    color: $color-gray-700;
+
+    .developer__image {
+      color: $color-primary-500;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: $color-gray-700;
+
+    .developer__image {
+      color: $color-primary-500;
+    }
+  }
 }

@@ -1,14 +1,13 @@
-.site-list__menu {
+.site-list {
   font-family: $font-heading;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: $color-black;
   text-transform: uppercase;
-  list-style: none;
+
   text-align: center;
-  padding: 0;
-  margin: 0;
+
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -20,6 +19,23 @@
     font-size: 20px;
     line-height: normal;
     color: $color-white;
+  }
+}
+
+.site-list__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
   }
 }
 
@@ -60,11 +76,5 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-  }
-}
-
-.site-list {
-  @media (min-width: $tablet-width) {
-    position: static;
   }
 }

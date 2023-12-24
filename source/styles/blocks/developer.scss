@@ -1,10 +1,11 @@
-.developer {
+.page-footer__developer-conteiner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+}
 
+.developer {
   color: $color-gray-700;
-
   font-size: 16px;
   text-decoration: none;
 

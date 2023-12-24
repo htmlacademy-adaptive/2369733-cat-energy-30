@@ -64,13 +64,6 @@
 }
 
 .site-list {
-
-  top: 70px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-
   @media (min-width: $tablet-width) {
     position: static;
   }

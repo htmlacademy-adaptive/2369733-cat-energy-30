@@ -28,26 +28,28 @@
       </a>
       </picture>
 
-      <a class="page-header__logo-sign" href="index.html">
-        <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page"
-          alt="Логотип Cat Energy.">
+      <a class="page-header__logo-sign" href="#" tabindex="-1">
+        <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page" alt="Логотип Cat Energy.">
       </a>
-      <button class="page-header__togler--closed" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
+
+      <button class="page-header__toggler js-burger" aria-label="бургер меню" type="button">
+        <span class="page-header__toggler-burger"></span>
+        <span class="page-header__toggler-burger"></span>
+        <span class="page-header__toggler-burger"></span>
       </button>
 
     </div>
 
-    <nav class="page-header__nav page-header__nav-closed">
-      <ul class="page-header__menu site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--active" href="index.html" >главная</a>
+    <nav class="page-header__nav site-list js-nav-menu">
+      <ul class="site-list__menu">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="index.html">главная</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="catalog.html">каталог продукции</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">каталог продукции</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#" aria-current="page" tabindex="-1">подбор программы</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-current="page" tabindex="-1">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -122,8 +124,10 @@
             <li class="field-group__item">
               <label class="field">
                 <span class="field__lead">E-mail:*</span>
-                <input class="field__input field__input--icon" name="e-mail" type="email" placeholder="kuklachev@gmail.com" required>
-                <svg class="field__icon" width="24" height="24" fill="none" stroke="black" viewBox="0 0 24 24" aria-hidden="true">
+                <input class="field__input field__input--icon" name="e-mail" type="email"
+                  placeholder="kuklachev@gmail.com" required>
+                <svg class="field__icon" width="24" height="24" fill="none" stroke="black" viewBox="0 0 24 24"
+                  aria-hidden="true">
                   <use href="./images/icons/stack.svg#ico-mail"></use>
                 </svg>
               </label>
@@ -131,8 +135,10 @@
             <li class="field-group__item">
               <label class="field">
                 <span class="field__lead">Телефон:*</span>
-                <input class="field__input field__input--icon" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
-                <svg class="field__icon"  width="24" height="24" fill="none" stroke="black" viewBox="0 0 24 24" aria-hidden="true">
+                <input class="field__input field__input--icon" name="phone" type="tel" placeholder="8 (960) 900-60-90"
+                  required>
+                <svg class="field__icon" width="24" height="24" fill="none" stroke="black" viewBox="0 0 24 24"
+                  aria-hidden="true">
                   <use href="./images/icons/stack.svg#ico-phone"></use>
                 </svg>
               </label>
@@ -185,11 +191,14 @@
     <footer class="page-main__footer contacts">
       <h2 class="visually-hidden">Контакты.</h2>
 
-      <p class="contacts__heading">приглашаем
-        к сотрудничеству
-        дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198127!2d30.32047247728289!3d59.93871916209366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1701614447519!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contacts__container">
+        <p class="contacts__heading">приглашаем
+          к сотрудничеству
+          дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198127!2d30.32047247728289!3d59.93871916209366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1701614447519!5m2!1sru!2sru"></iframe>
     </footer>
   </main>
 
@@ -227,17 +236,18 @@
       </ul>
 
 
-        <div class="page-footer__developer-conteiner">
-          <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Разработано в</span>
-            HTML Academy
-          </a>
-          <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">
-              <use href="./images/icons/stack.svg#logo-academy"><span class="visually-hidden">HTML Academy logo</span></use>
-            </svg>
-          </a>
-        </div>
+      <div class="page-footer__developer-conteiner">
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Разработано в</span>
+          HTML Academy
+        </a>
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="developer__image" width="27" height="34" viewBox="0 0 27 34">
+            <use href="./images/icons/stack.svg#logo-academy"><span class="visually-hidden">HTML Academy logo</span>
+            </use>
+          </svg>
+        </a>
+      </div>
     </div>
 
   </footer>

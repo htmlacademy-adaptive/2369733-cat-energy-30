@@ -16,7 +16,7 @@
 
   <header class="page__header page-header">
 
-    <div class="page-header__container-header">
+    <div class="page-header__container-header container">
       <a class="page-header__logo logo" href="index.html">
         <picture>
           <source width="202" height="59" media="(min-width: 1240px)" srcset="images/logo-desktop.svg"
@@ -28,26 +28,28 @@
       </a>
       </picture>
 
-      <a class="page-header__logo-sign" href="index.html" tabindex="-1">
-        <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page"
-          alt="Логотип Cat Energy.">
+      <a class="page-header__logo-sign" href="#" tabindex="-1">
+        <img src="./images/logo-sign.svg" width="101" height="19"  aria-current="page" alt="Логотип Cat Energy.">
       </a>
-      <button class="page-header__toggler-open" type="button">
-        <span class="visually-hidden">Открыть меню.</span>
+
+      <button class="page-header__toggler js-burger" aria-label="бургер меню" type="button">
+        <span class="page-header__toggler-burger"></span>
+        <span class="page-header__toggler-burger"></span>
+        <span class="page-header__toggler-burger"></span>
       </button>
 
     </div>
 
-    <nav class="page-header__nav">
-      <ul class="page-header__menu site-menu">
-        <li class="site-menu__item">
-          <a class="site-menu__link site-menu__link--active" href="index.html"  >главная</a>
+    <nav class="page-header__nav site-list js-nav-menu">
+      <ul class="site-list__menu">
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link" href="index.html">главная</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="#" aria-current="page" tabindex="-1">каталог продукции</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#"  aria-current="page" tabindex="-1">каталог продукции</a>
         </li>
-        <li class="site-menu__item">
-          <a class="site-menu__link" href="form.html">подбор программы</a>
+        <li class="site-list__item">
+          <a class="site-list__link" href="form.html">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -307,14 +309,14 @@
     <footer class="page-main__footer contacts">
       <h2 class="visually-hidden">Контакты.</h2>
 
-      <p class="contacts__heading">приглашаем
-        к сотрудничеству
-        дилеров!</p>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198127!2d30.32047247728289!3d59.93871916209366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1701614447519!5m2!1sru!2sru"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contacts__container">
+        <p class="contacts__heading">приглашаем
+          к сотрудничеству
+          дилеров!</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
+    <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257198127!2d30.32047247728289!3d59.93871916209366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1701614447519!5m2!1sru!2sru"></iframe>
     </footer>
   </main>
 
@@ -326,7 +328,7 @@
 
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social__link" href="https://vk.com/htmlacademy">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
             <svg width="27" height="17" viewBox="0 0 27 17">
               <use href="./images/icons/stack.svg#vk"></use>
@@ -342,7 +344,7 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://t.me/htmlacademy">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Telegram</span>
             <svg class="social__img" width="20" height="18" viewBox="0 0 20 18">
               <use href="./images/icons/stack.svg#telegram"></use>

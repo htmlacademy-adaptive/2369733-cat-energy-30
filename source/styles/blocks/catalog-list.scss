@@ -1,3 +1,27 @@
-.page-footer {
-  margin: 0;
+.card__item {
+  display: grid;
+  padding-top: 19px;
+  padding-bottom: 24px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "card__img card__heading"
+    "card__img card__list"
+    "card__button card__button";
 }
+
+.card__img {
+  grid-area: card__img;
+}
+
+.card__heading {
+  grid-area: card__heading;
+}
+
+.card__list {
+  grid-area: card__list;
+}
+
+.card__button {
+  grid-area: card__button;
+}
+

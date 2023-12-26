@@ -1,19 +1,18 @@
 .hero {
   padding-top: 27px;
+
   text-align: center;
+  color: $color-white;
 
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: auto 320px;
+  background-image: linear-gradient($color-primary-500--opacity 302px, $color-white 302px), url("../../images/background/index-background-mobile@1x.jpg");
 
-  @media (max-width: $mobile-width) {
-    color: $color-white;
-    background-color: $color-primary-800;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-image: linear-gradient($color-primary-500--opacity 0, $color-primary-500--opacity 302px, $color-white 302px), url("../../images/background/index-background-mobile@1x.jpg");
-  }
 
   @media (min-resolution: 2dppx) {
     background-repeat: no-repeat;
-    background-size: auto auto 302px;
+    background-size: auto 302px;
     background-image: linear-gradient($color-primary-500--opacity 0, $color-primary-500--opacity 302px, $color-white 302px), url("../../images/background/index-background-mobile@2x.jpg");
   }
 

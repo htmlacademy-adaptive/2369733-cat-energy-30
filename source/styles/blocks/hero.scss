@@ -49,6 +49,19 @@
   }
 }
 
+.hero__container {
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    padding: 0 90px 526px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 491px;
+    padding: 20px 610px 95px 80px;
+  }
+}
+
 .hero__text {
   margin: 0;
   margin-bottom: 29px;
@@ -81,9 +94,9 @@
     height: 609px;
   }
 
-  @media (min-width: $mobile-width) {
-    top: 306px;
-    left: calc(50% - 382px);
+  @media (min-width: $desktop-width) {
+    top: -20px;
+    left: calc(50% - 162px);
 
     width: 552px;
     height: 499px;

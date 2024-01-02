@@ -6,22 +6,9 @@
   font-weight: 400;
   margin: 0;
   padding: 25px 0 40px;
-}
-
-.hero__heading {
-  color: $color-white;
-  margin: 0;
-  margin-bottom: 25px;
-
-  font-family: $font-heading;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 41px;
-    color: $color-black;
     font-size: 60px;
+    line-height: 60px;
   }
 }
-

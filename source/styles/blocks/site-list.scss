@@ -2,7 +2,6 @@
   font-family: $font-heading;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 500;
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
@@ -60,7 +59,7 @@
 .site-list__link {
   display: block;
   text-decoration: none;
-  color: $color-black;
+  color: inherit;
   padding: 22px 10px 24px;
   min-width: 200px;
 

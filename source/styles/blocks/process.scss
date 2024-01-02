@@ -45,6 +45,8 @@
     @media (min-width: $tablet-width) {
       content: counter(process);
       position: absolute;
+      top: -25px;
+      right: 72px;
       z-index: -1;
       color: $color-gray-50;
       font-family: $font-heading;
@@ -73,8 +75,12 @@
 }
 
 .process__text {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0;
-  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

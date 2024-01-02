@@ -8,6 +8,11 @@
   color: $color-gray-700;
   background-color: $color-white;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .page__body {

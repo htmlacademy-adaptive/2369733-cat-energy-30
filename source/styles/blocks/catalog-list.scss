@@ -1,27 +1,53 @@
-.card__item {
-  display: grid;
-  padding-top: 19px;
-  padding-bottom: 24px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "card__img card__heading"
-    "card__img card__list"
-    "card__button card__button";
+.catalog-list {
+  overflow: hidden;
+
+  @media (max-width: $mobile-width) {
+    border-bottom: 1px solid $color-gray-100;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
 }
 
-.card__img {
-  grid-area: card__img;
+.catalog-list__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 64px;
+  }
 }
 
-.card__heading {
-  grid-area: card__heading;
+.catalog-list__item {
+  @media (max-width: $mobile-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw);
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $color-gray-100;
+    }
+  }
 }
 
-.card__list {
-  grid-area: card__list;
+.catalog-list__item--show-more {
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
 }
-
-.card__button {
-  grid-area: card__button;
-}
-

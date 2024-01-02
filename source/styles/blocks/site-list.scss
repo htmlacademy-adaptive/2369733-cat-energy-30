@@ -21,7 +21,7 @@
     }
 
     & .site-list__item {
-      border-top: 1px solid $color-gray-100;
+      border-bottom: 1px solid $color-gray-100;
       background-color: inherit;
     }
   }
@@ -37,7 +37,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: normal;
-    color: $color-white;
+    color: $color-black;
   }
 }
 

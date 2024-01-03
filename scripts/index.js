@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{let e=document.querySelector(".js-burger"),t=document.querySelector(".js-nav-menu");t.classList.remove("site-list--nojs"),e.addEventListener("click",s=>{s.preventDefault(),e.classList.toggle("is-active"),t.classList.toggle("is-active")})});

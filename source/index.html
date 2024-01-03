@@ -39,7 +39,7 @@
 
     </div>
 
-    <nav class="page-header__nav site-list site-list--nojs js-nav-menu">
+    <nav class="page-header__nav site-list is-active js-nav-menu">
       <ul class="site-list__menu">
         <li class="site-list__item site-list__item--active">
           <a class="site-list__link site-list__link-index" href="#" aria-current="page" tabindex="-1">главная</a>
@@ -189,7 +189,11 @@
             </div>
           </div>
           <div class="example__switcher switcher switcher--before">
-            <div class="switcher__toggler"></div>
+            <div class="switcher__toggler">
+              <label for="range">
+                <input class="slider" type="range" name="toggler" min="1" max="100" value="50" id="range">
+              </label>
+            </div>
           </div>
         </div>
       </div>

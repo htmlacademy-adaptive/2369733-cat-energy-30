@@ -41,6 +41,8 @@
 }
 
 .example__view {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     margin-top: -43px;
   }

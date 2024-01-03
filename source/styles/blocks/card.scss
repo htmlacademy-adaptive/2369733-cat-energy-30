@@ -30,7 +30,7 @@
 
 .card__link {
   margin-bottom: 9px;
-  padding-right: 25px;
+  padding-right: 41px;
   grid-area: link;
 
   color: $color-gray-850;
@@ -49,7 +49,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 33px;
     margin-bottom: 6px;
-    padding: 0 40px;
+    padding: 0 45px;
 
     &::after {
       bottom: 120px;
@@ -57,7 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
+    padding: 0 5px;
   }
 }
 

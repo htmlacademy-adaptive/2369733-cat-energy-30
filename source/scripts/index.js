@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+window.addEventListener('load', () => {
   const button = document.querySelector('.js-burger');
   const navMenu = document.querySelector('.js-nav-menu');
 

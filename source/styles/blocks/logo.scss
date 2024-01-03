@@ -1,3 +1,31 @@
 .logo {
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+
+  &:link:hover {
+    opacity: 0.8;
+  }
+
+  &:link:active {
+    opacity: 0.6;
+  }
+}
+
+.logo--footer {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    padding: 8px;
+    justify-content: center;
+  }
 }

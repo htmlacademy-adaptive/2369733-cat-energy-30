@@ -4,15 +4,6 @@
   color: $color-black;
 }
 
-.page-header__logo-sign {
-
-  text-decoration: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+.page-main__hero {
+  background: linear-gradient(0deg, $color-white 7%, $color-primary-500 7%);
 }

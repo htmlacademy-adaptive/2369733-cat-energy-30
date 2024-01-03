@@ -1,29 +1,94 @@
-.page-header__toggler-open {
-  display: none;
-  width: 40px;
-  height: 40px;
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
-  mask-image: url("../../images/icons/stack.svg#burger");
-  background-color: $color-black;
-  border: 0;
+.page-header {
+  position: relative;
 
-  @media (max-width: $mobile-width) {
-    display: block;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 350px;
+    justify-content: space-around;
   }
 }
 
-.page-header__toggler-close {
-  display: none;
-  width: 40px;
-  height: 40px;
-  mask-position: 50% 50%;
-  mask-repeat: no-repeat;
-  mask-image: url("../../images/icons/stack.svg#close");
-  background-color: $color-black;
-  border: 0;
+.page-header__container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  background: $color-white;
+}
 
-  @media (max-width: $mobile-width) {
-    display: block;
+.page-header__logo-sign {
+  text-decoration: none;
+  padding: 23px 20px 24px;
+  align-self: center;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__toggler {
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+
+  .page-header__toggler-burger {
+    width: 24px;
+    height: 2px;
+    background-color: $color-black;
+    transition: 0.3s ease;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:nth-child(1) {
+      top: 7px;
+    }
+
+    &:nth-child(2) {
+      top: 17px;
+    }
+
+    &:nth-child(3) {
+      top: 27px;
+    }
+  }
+
+  &.is-active {
+    span {
+      &:nth-child(1) {
+        transform: translate(-50%, 10px) rotate(-46deg);
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:nth-child(3) {
+        transform: translate(-50%, -10px) rotate(46deg);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

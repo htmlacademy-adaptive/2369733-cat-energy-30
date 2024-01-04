@@ -169,32 +169,36 @@
             <span class="example__span">15 000 РУБ.</span>
           </p>
         </div>
-        <div class="example__view">
-          <div class="example__image">
-            <div class="example__image example__image--before">
-              <picture>
-                <source type="image/jpeg" width="560" height="512" media="(min-width: 768px)"
-                  srcset="images/cat-bold-tablet-desktop@1x.png 1x, images/cat-bold-tablet-desktop@2x.png 2x">
-                <img class="example__image" src="images/cat-bold-mobile@1x.png" srcset="images/cat-bold-mobile@2x.png"
-                  width="280" height="256" alt="Мягкий кот.">
-              </picture>
-            </div>
-            <div class="example__image example__image--after">
-              <picture>
-                <source type="image/jpeg" width="560" height="512" media="(min-width: 768px)"
-                  srcset="images/cat-thin-tablet-desktop@1x.png 1x, images/cat-thin-tablet-desktop@2x.png 2x">
-                <img class="example__image" src="images/cat-thin-mobile@1x.png" srcset="images/cat-thin-mobile@2x.png"
-                  width="280" height="256" alt="Стройный кот.">
-              </picture>
-            </div>
+
+        <div class="example__switcher switcher">
+
+          <div class="switcher__left">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)"
+                srcset="images/cat-bold-tablet-desktop@1x.png 1x, images/cat-bold-tablet-desktop@2x.png 2x">
+              <img class="switcher__image" src="images/cat-bold-mobile@1x.png"
+                srcset="images/cat-bold-mobile@2x.png 2x" width="280" height="256"
+                alt="Мягкий кот.">
+            </picture>
           </div>
-          <div class="example__switcher switcher switcher--before">
-            <div class="switcher__toggler">
-              <label for="range">
-                <input class="slider" type="range" name="toggler" min="1" max="100" value="50" id="range">
-              </label>
-            </div>
+          <div class="switcher__right">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)"
+                srcset="images/cat-thin-tablet-desktop@1x.png 1x, images/cat-thin-tablet-desktop@2x.png 2x">
+              <img class="switcher__image" src="images/cat-thin-mobile@1x.png" srcset="images/cat-thin-mobile@2x.png 2x"
+                width="280" height="256" alt="Стройный кот.">
+            </picture>
           </div>
+          <div class="switcher__control-wrapper">
+            <button class="switcher__control" type="button">
+              <svg class="switcher__icon" width="24" height="18" viewBox="0 0 24 18" aria-hidden="true" focusable="false">
+                <use href="images/icons/stack.svg#switcher-bar-img"></use>
+              </svg>
+              <span class="visually-hidden">range</span>
+            </button>
+          </div>
+        </div>
+
         </div>
       </div>
     </section>

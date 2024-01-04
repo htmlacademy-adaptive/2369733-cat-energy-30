@@ -6,13 +6,14 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $color-white;
-  transform: translateY(-60%);
+
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   transition: 0.3s ease;
   z-index: 2;
+  transform: translateY(-60%);
 
   @media (min-width: $tablet-width) {
     transform: translateY(0);
@@ -61,8 +62,6 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 22px 10px 24px;
-  min-width: 200px;
 
   @media (max-width: $mobile-width) {
     border-bottom: 1px solid $color-gray-150;

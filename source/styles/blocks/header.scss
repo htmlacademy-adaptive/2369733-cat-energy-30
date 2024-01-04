@@ -1,33 +1,21 @@
-.page-header {
+.header {
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  @media (min-width: $desktop-width) {
-    gap: 350px;
-    justify-content: space-around;
   }
 }
 
-.page-header__container-header {
+.header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 3;
   background: $color-white;
 }
 
-.page-header__logo-sign {
+.header__logo-sign {
   text-decoration: none;
-  padding: 23px 20px 24px;
   align-self: center;
 
 
@@ -40,7 +28,7 @@
   }
 }
 
-.page-header__toggler {
+.header__toggler {
   width: 35px;
   height: 35px;
   background: transparent;
@@ -48,7 +36,7 @@
   padding: 0;
   position: relative;
 
-  .page-header__toggler-burger {
+  .header__toggler-burger {
     width: 24px;
     height: 2px;
     background-color: $color-black;

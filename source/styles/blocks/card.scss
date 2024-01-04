@@ -83,11 +83,23 @@
   grid-area: img;
   align-self: center;
   justify-self: center;
-  width: auto;
-  display: block;
+  width: 68px;
+  height: 86px;
+  display: grid;
 
   @media (min-width: $tablet-width) {
-    min-width: 161px;
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.card__img--larger {
+  width: 84px;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
   }
 }
 

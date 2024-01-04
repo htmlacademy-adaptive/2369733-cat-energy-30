@@ -54,7 +54,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    position: static;
   }
 }
 
@@ -62,10 +61,10 @@
   display: block;
   text-decoration: none;
   color: inherit;
+  padding: 20px;
 
-  @media (max-width: $mobile-width) {
-    border-bottom: 1px solid $color-gray-150;
-    background-color: inherit;
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
   }
 
   &:link:hover {

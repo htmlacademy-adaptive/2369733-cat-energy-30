@@ -6,26 +6,18 @@
   }
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 3;
-  background: $color-white;
-}
-
 .header__logo-sign {
   text-decoration: none;
   align-self: center;
 
-
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+.header__wrraper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__toggler {
@@ -36,7 +28,7 @@
   padding: 0;
   position: relative;
 
-  .header__toggler-burger {
+  span {
     width: 24px;
     height: 2px;
     background-color: $color-black;

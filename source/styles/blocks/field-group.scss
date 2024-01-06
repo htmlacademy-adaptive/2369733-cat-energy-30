@@ -84,7 +84,7 @@
   }
 }
 
-.field-group__item {
+.field-group__item--willow {
   & + & {
     margin-top: 14px;
 
@@ -92,16 +92,34 @@
       margin-top: 20px;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    .field-group__list--contacts & {
-      margin-top: 0;
+.field-group__item--radio {
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
     }
+  }
+}
 
-    @media (max-width: $mobile-width) {
-      .field-group__list--additional & + & {
-        margin-top: 12px;
-      }
+.field-group__item--liaison {
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.field-group--checkbox {
+  & + & {
+    margin-top: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
     }
   }
 }

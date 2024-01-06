@@ -15,13 +15,13 @@
 .contacts__container {
   margin-right: auto;
   margin-left: auto;
-  padding: 26px 0;
+  padding: 26px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 56px 40px 61px;
+    padding: 56px 70px 61px;
     grid-template-columns: 172px 172px;
     justify-content: space-between;
   }
@@ -29,11 +29,10 @@
   @media (min-width: $desktop-width) {
     position: relative;
     z-index: 1;
-
-    grid-template-columns: 172px 155px;
+    padding: 56px 80px 61px;
+    grid-template-columns: 210px 173px;
     width: 565px;
     margin: 0;
-    padding: 56px 80px;
 
     background-color: $color-white;
   }

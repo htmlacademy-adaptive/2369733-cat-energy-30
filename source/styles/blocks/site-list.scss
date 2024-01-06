@@ -5,7 +5,10 @@
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
+  align-items: center;
   background-color: $color-white;
+  justify-content: end;
+
 
   position: absolute;
   bottom: 0;
@@ -52,19 +55,23 @@
   padding: 0;
   margin: 0;
 
+
   @media (min-width: $tablet-width) {
     display: flex;
+    gap: 33px;
   }
 }
 
 .site-list__link {
   display: block;
   text-decoration: none;
-  color: inherit;
+  color: $color-black;
   padding: 20px;
+  border-bottom: 1px solid $color-gray-100;
 
   @media (min-width: $tablet-width) {
     padding: 10px 0;
+    border-bottom: 1px solid transparent;
   }
 
   &:link:hover {
@@ -76,8 +83,18 @@
   }
 }
 
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $color-primary-500;
+  }
+}
+
 .site-list__link-index {
   @media (min-width: $desktop-width) {
     color: $color-white;
+
+    &.site-list__item--active {
+      border-bottom: 2px solid $color-white;
+    }
   }
 }

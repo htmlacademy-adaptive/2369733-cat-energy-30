@@ -1,8 +1,15 @@
 .header {
   position: relative;
 
+
   @media (min-width: $tablet-width) {
     display: flex;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1210px;
+    padding-top: 70px;
   }
 }
 
@@ -16,8 +23,17 @@
 }
 
 .header__wrraper {
+
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-width: 720px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1210px;
+  }
 }
 
 .header__toggler {

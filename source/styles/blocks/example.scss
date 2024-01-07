@@ -10,8 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 10px;
-    padding-bottom: 69px;
+    padding-top: 19px;
+    padding-bottom: 80px;
 
     border-top: none;
   }
@@ -65,7 +65,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 50px;
+    padding: 7px 0 50px;
   }
 }
 
@@ -82,7 +82,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 1 / -2;
     margin-top: 97px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     padding-right: 30px;
   }
 }
@@ -203,6 +203,6 @@
   margin: 20px auto;
 
   @media (min-width: $desktop-width) {
-    margin: -46px auto;
+    margin: 9px auto 0 30px;
   }
 }

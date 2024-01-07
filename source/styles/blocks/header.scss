@@ -13,6 +13,12 @@
   }
 }
 
+.header--catalog {
+  @media (max-width: $mobile-width) {
+    border-bottom: 1px solid $color-gray-100;
+  }
+}
+
 .header__logo-sign {
   text-decoration: none;
   align-self: center;

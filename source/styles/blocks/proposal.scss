@@ -2,9 +2,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
-  text-align: center;
-  color: $color-white;
+
   background-color: $color-primary-500;
   background-repeat: no-repeat;
   background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@1x.jpg");
@@ -40,6 +38,10 @@
 }
 
 .proposal__text {
+  text-align: center;
+  color: $color-white;
+  font-size: 16px;
+  line-height: 20px;
   padding: 186px 58px 18px;
   background-size: 78px 80px;
   background-repeat: no-repeat;
@@ -47,12 +49,14 @@
   background-image: url("../../images/icons/stack.svg#gift");
 
   @media (min-width: $tablet-width) {
+    text-align: left;
     padding: 71px 125px 69px 421px;
     background-position: 20% 50%;
     background-size: 80px 82px;
   }
 
   @media (min-width: $desktop-width) {
+    text-align: center;
     padding: 160px 58px 18px;
     background-position: 50% 33%;
     background-size: 78px 80px;

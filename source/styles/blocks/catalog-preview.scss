@@ -27,16 +27,16 @@
 
 .catalog-preview__item {
   position: relative;
-  padding: 24px 34px 16px 20px;
+  padding: 24px 34px 19px 20px;
   background-color: $color-gray-50;
 
 
   @media (min-width: $tablet-width) {
-    padding: 71px 314px 52px 52px;
+    padding: 71px 314px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 52px 53px;
+    padding: 45px 52px 59px;
   }
 }
 
@@ -172,7 +172,7 @@
 
 .catalog-preview__text {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding-bottom: 22px;
 
   color: $color-gray-700;
@@ -182,23 +182,20 @@
     color: $color-black;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 54px;
     padding: 0;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
 }
 
 .catalog-preview__link {
-  display: grid;
-  grid-template-columns: max-content 32px;
-  align-items: center;
-  gap: 17px;
   padding: 5px 0;
+  padding-right: 38px;
 
   font-family: $font-heading;
   font-size: 16px;
@@ -206,38 +203,54 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-black;
+  position: relative;
+  width: max-content;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
-    gap: 27px;
+    padding-right: 46px;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    transition: ease 0.3s;
   }
 
   &::after {
-    content: "";
-
-    width: 24px;
-    height: 15px;
-
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-
+    width: 15px;
+    height: 12px;
     background-image: url("../../images/icons/stack.svg#arrow");
+    background-repeat: no-repeat;
+    top: 50%;
+    right: -7px;
+  }
+
+  &::before {
+    width: 18px;
+    height: 2px;
+    background-color: $color-black;
+    top: 50%;
+    right: 3px;
   }
 
   &:hover {
     opacity: 0.6;
 
+    &::before {
+      width: 26px;
+      right: -8px;
+    }
+
     &::after {
-      width: 32px;
+      right: -16px;
     }
   }
 
   &:active {
     opacity: 0.3;
-
-    &::after {
-      width: 32px;
-    }
   }
 }

@@ -2,7 +2,7 @@
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-
+  background-size: cover;
   background-color: $color-primary-500;
   background-repeat: no-repeat;
   background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@1x.jpg");
@@ -10,7 +10,7 @@
   @media (min-resolution: 2dppx) {
     background-repeat: no-repeat;
     background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@2x.jpg");
-    background-size: 280px 290px;
+    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
@@ -26,33 +26,34 @@
 
   @media (min-width: $desktop-width) {
     width: 280px;
-    background-size: 245px 288px;
+    background-size: cover;
     background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
       background-repeat: no-repeat;
       background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@2x.jpg");
-      background-size: 280px 305px;
+      background-size: cover;
     }
   }
 }
 
 .proposal__text {
+  margin: 0;
   text-align: center;
   color: $color-white;
   font-size: 16px;
   line-height: 20px;
-  padding: 186px 58px 18px;
-  background-size: 78px 80px;
+  padding: 186px 58px 43px;
+  background-size: 78px 81px;
   background-repeat: no-repeat;
-  background-position: 50% 33%;
+  background-position: 50% 27%;
   background-image: url("../../images/icons/stack.svg#gift");
 
   @media (min-width: $tablet-width) {
     text-align: left;
     padding: 71px 125px 69px 421px;
-    background-position: 20% 50%;
-    background-size: 80px 82px;
+    background-position: 12% 49%;
+    background-size: 86px 82px;
   }
 
   @media (min-width: $desktop-width) {

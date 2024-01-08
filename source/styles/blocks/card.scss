@@ -38,14 +38,14 @@
   text-decoration: none;
 
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 80px;
-  //   left: 0;
-  // }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 33px;
@@ -83,31 +83,18 @@
   grid-area: img;
   align-self: center;
   justify-self: center;
-  width: 68px;
-  height: 86px;
-  display: grid;
+  display: block;
 
   @media (min-width: $tablet-width) {
-    width: 161px;
-    height: 172px;
-  }
-}
-
-.card__img--larger {
-  width: 84px;
-  height: 100px;
-
-  @media (min-width: $tablet-width) {
-    width: 168px;
-    height: 206px;
+    width: auto;
   }
 }
 
 .card__img {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: -12px;
   }
 
   @media (min-width: $desktop-width) {

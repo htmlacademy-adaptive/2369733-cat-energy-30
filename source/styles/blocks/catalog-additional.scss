@@ -1,6 +1,6 @@
 .catalog-additional {
   position: relative;
-  padding: 25px 0 35px;
+  padding: 9px 0 17px;
 
   @media (min-width: $tablet-width) {
     padding-top: 58px;
@@ -25,7 +25,7 @@
 .catalog-additional__heading {
   margin: 0;
   margin-bottom: 35px;
-  padding: 0 20px;
+  padding: 0 20px 0 0;
   justify-self: start;
   width: fit-content;
   position: relative;
@@ -38,7 +38,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 17px;
+    top: 21px;
     right: 0;
     width: 100vw;
     height: 2px;

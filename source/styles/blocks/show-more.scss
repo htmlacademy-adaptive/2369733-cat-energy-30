@@ -56,9 +56,9 @@
     background-color: $show-more;
 
     @media (min-width: $tablet-width) {
-      bottom: 130px;
+      bottom: 125px;
       width: 60px;
-      left: 34%;
+      left: 38%;
     }
   }
 
@@ -69,7 +69,7 @@
 
 .show-more__text {
   margin: 0;
-  margin-bottom: 65px;
+  margin-bottom: 22px;
 
   color: $color-gray-700;
 
@@ -96,5 +96,13 @@
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
+  }
+
+  &:hover {
+    background-color: $color-gray-180;
+  }
+
+  &:active {
+    color: $color-gray-700;
   }
 }

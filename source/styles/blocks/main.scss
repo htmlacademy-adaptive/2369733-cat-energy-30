@@ -1,10 +1,15 @@
 .main__container {
   padding-top: 27px;
-  padding-bottom: 26px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding-top: 55px;
-    padding-bottom: 56px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
+    padding-bottom: 50px;
   }
 }
 

@@ -8,15 +8,11 @@
   background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@1x.jpg");
 
   @media (min-resolution: 2dppx) {
-    background-repeat: no-repeat;
     background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@2x.jpg");
-    background-size: cover;
   }
 
   @media (min-width: $tablet-width) {
     width: 707px;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -25,14 +21,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 280px;
-    background-size: cover;
+    width: 245px;
     background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-repeat: no-repeat;
       background-image: linear-gradient($color-primary-500--opacity, $color-primary-500--opacity), url("../../images/background/washing-machine-mobile-desktop@2x.jpg");
-      background-size: cover;
     }
   }
 }
@@ -58,8 +51,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    padding: 160px 58px 18px;
-    background-position: 50% 33%;
+    padding: 184px 38px 44px;
     background-size: 78px 80px;
+    background-position: 51% 26%;
   }
 }

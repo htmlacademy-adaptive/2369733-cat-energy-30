@@ -16,8 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 158px;
-    padding-bottom: 42px;
+    padding-top: 148px;
+    padding-bottom: 37px;
   }
 }
 
@@ -60,6 +60,11 @@
       width: 60px;
       left: 38%;
     }
+
+    @media (min-width: $desktop-width) {
+      bottom: 116px;
+      left: 33%;
+    }
   }
 
   &::after {
@@ -86,6 +91,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    margin-bottom: 92px;
   }
 }
 

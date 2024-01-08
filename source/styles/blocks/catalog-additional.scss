@@ -1,14 +1,14 @@
 .catalog-additional {
   position: relative;
-  padding: 9px 0 17px;
+  padding: 23px 0 17px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
+    padding-top: 71px;
     padding-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 74px;
+    padding-top: 78px;
     padding-bottom: 86px;
   }
 }
@@ -38,7 +38,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 21px;
+    top: 60%;
     right: 0;
     width: 100vw;
     height: 2px;
@@ -61,7 +61,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 80px;
     margin-left: -40px;
-    padding: 0 35px 0 40px;
+    padding: 0 40px 0 40px;
     grid-column: 1 / -1;
   }
 }

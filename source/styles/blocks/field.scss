@@ -15,7 +15,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    gap: 18px;
+    gap: 14px;
 
     font-size: 20px;
   }
@@ -23,7 +23,7 @@
 
 .field__input {
   min-width: 100px;
-  padding: 9px 14px;
+  padding: 12px 14px;
 
   color: $color-gray-700;
   border: 1px solid $color-gray-150;
@@ -72,7 +72,8 @@
 }
 
 .field__input--textarea {
-  padding-bottom: 18px;
+  padding-bottom: 45px;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 15px;
@@ -85,18 +86,18 @@
 
 .field__icon {
   position: absolute;
-  right: 8px;
-  top: calc(50% - 12px);
+  right: 14px;
+  top: calc(50% - 7px);
 
   @media (min-width: $tablet-width) {
     right: 14px;
   }
 
-  .field__input:focus + & {
+  .field__input:focus+& {
     color: $color-primary-500;
   }
 
-  .field__input:not(:placeholder-shown):invalid + & {
+  .field__input:not(:placeholder-shown):invalid+& {
     color: $color-error-500;
   }
 }

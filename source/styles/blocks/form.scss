@@ -27,7 +27,7 @@
     margin-top: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 69px;
+      margin-top: 68px;
     }
 
     @media (min-width: $desktop-width) {
@@ -42,7 +42,7 @@
   margin-top: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
+    margin-top: 65px;
   }
 }
 
@@ -73,7 +73,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 51px;
-    padding-bottom: 72px;
+    padding-bottom: 62px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -96,15 +96,16 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 21px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 0;
+  }
 }
 
 .form__additional {
   margin: 0;
   color: $color-black;
-  font-size: 14px;
   line-height: 16px;
-
-  @media (min-width: $desktop-width) {
-    font-size: 16px;
-  }
 }

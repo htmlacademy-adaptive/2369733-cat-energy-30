@@ -53,6 +53,10 @@
 
   .field--no-label & {
     grid-column: 1 / -1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 35px;
+    }
   }
 
   .field--icon & {
@@ -93,11 +97,11 @@
     right: 14px;
   }
 
-  .field__input:focus+& {
+  .field__input:focus + & {
     color: $color-primary-500;
   }
 
-  .field__input:not(:placeholder-shown):invalid+& {
+  .field__input:not(:placeholder-shown):invalid + & {
     color: $color-error-500;
   }
 }

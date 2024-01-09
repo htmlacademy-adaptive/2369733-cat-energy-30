@@ -17,3 +17,9 @@
     padding: 0 70px;
   }
 }
+
+.page__form--container {
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}

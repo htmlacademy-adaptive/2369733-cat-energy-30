@@ -50,7 +50,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 72px;
+    margin-bottom: 55px;
   }
 }
 
@@ -89,6 +89,10 @@
     column-gap: 60px;
     row-gap: 32px;
     padding-top: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
   }
 
   @media (min-width: $desktop-width) {

@@ -20,6 +20,16 @@
   }
 }
 
+.header__logo-sign {
+  &:link:hover {
+    opacity: 0.8;
+  }
+
+  &:link:active {
+    opacity: 0.6;
+  }
+}
+
 .logo--footer {
   display: flex;
   align-items: center;

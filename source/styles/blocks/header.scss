@@ -44,6 +44,14 @@
   position: relative;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   span {
     width: 24px;
     height: 2px;
@@ -87,4 +95,9 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.no--js {
+  opacity: 0;
+  cursor: default;
 }

@@ -12,4 +12,3 @@ window.addEventListener('load', () => {
     navMenu.classList.toggle('is-active');
   });
 });
-

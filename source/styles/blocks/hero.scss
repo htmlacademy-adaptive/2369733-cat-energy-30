@@ -51,7 +51,10 @@
 }
 
 .hero__container {
+  display: grid;
+
   @media (min-width: $tablet-width) {
+    display: block;
     position: relative;
 
     padding: 22px 120px 526px;

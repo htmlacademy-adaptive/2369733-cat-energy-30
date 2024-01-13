@@ -73,7 +73,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 51px;
-    padding-bottom: 62px;
+    padding-bottom: 59px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -84,7 +84,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 59px;
-    padding-bottom: 82px;
+    padding-bottom: 79px;
     gap: 80px;
     grid-column: 1 / -1;
   }

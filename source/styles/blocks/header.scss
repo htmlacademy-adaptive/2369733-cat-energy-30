@@ -21,7 +21,7 @@
 
 .header__logo-sign {
   text-decoration: none;
-  align-self: center;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -98,6 +98,27 @@
 }
 
 .no--js {
-  opacity: 0;
-  cursor: default;
+  display: none;
+}
+
+.header__wrraper.header--no-js {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+  }
+}
+
+.header--no-js {
+  & .header__logo-sign {
+    display: grid;
+    grid-template-columns: 2 / 3;
+    text-align: start;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }

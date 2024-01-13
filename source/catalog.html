@@ -14,30 +14,31 @@
 
 <body>
 
-  <header class="header header--catalog">
+  <header class="header">
 
-    <div class="header__wrraper container">
-        <a class="header__logo logo" href="#">
-          <picture>
-            <source width="202" height="59" media="(min-width: 1240px)" srcset="images/logo-desktop.svg"
-              type="image/svg+xml">
-            <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg"
-              type="image/svg+xml">
-            <img class="logo__image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-          </picture>
-        </a>
-        <a class="header__logo-sign" href="#" tabindex="-1">
-          <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page" alt="Логотип Cat Energy.">
-        </a>
+    <div class="header__wrraper header--no-js container">
+      <a class="header__logo logo" href="index.html">
+        <picture>
+          <source width="202" height="59" media="(min-width: 1240px)" srcset="images/logo-desktop.svg"
+            type="image/svg+xml">
+          <source width="174" height="50" media="(min-width: 768px)" srcset="images/logo-tablet.svg"
+            type="image/svg+xml">
+          <img class="logo__image" src="./images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+      </a>
+      <a class="header__logo-sign" href="index.html" tabindex="-1">
+        <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page" alt="Логотип Cat Energy.">
+      </a>
       <button class="header__toggler no--js js-burger" aria-label="бургер меню" type="button">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-list no--js-list is-active js-nav-menu">
+      <nav class="site-list site-list--no-js is-active js-nav-menu">
         <ul class="site-list__menu">
           <li class="site-list__item ">
-            <a class="site-list__link" href="index.html" aria-current="page" tabindex="-1">главная</a>
+            <a class="site-list__link" href="index.html" aria-current="page"
+              tabindex="-1">главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link site-list__item--active" href="#">каталог продукции</a>
@@ -69,7 +70,7 @@
               srcset="images/catalog/catalog-1-mobile@2x.png" width="68" height="86" alt="" aria-hidden="true">
           </picture>
           <a class="card__link" href="404.html">
-            <h3 class="card__heading">Cat Energy PRO 500&nbsp;pг</h3>
+            <h3 class="card__heading">Cat Energy PRO 500&nbsp;p</h3>
           </a>
 
           <dl class="card__list">
@@ -277,7 +278,7 @@
 
         <div class="catalog-additional__promo proposal">
           <h2 class="visually-hidden">Специальное предложение.</h2>
-          <p class="proposal__text">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="proposal__text">Закажите все и&nbsp;получите чехол для кота в&nbsp;подарок!</p>
         </div>
       </div>
 

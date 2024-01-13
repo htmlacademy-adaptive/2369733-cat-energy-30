@@ -47,6 +47,12 @@
   }
 }
 
+.site-list.site-list--no-js {
+  position: static;
+  transform: translateY(0);
+  grid-column: 1 / -1;
+}
+
 .site-list__menu {
   list-style: none;
   padding: 0;

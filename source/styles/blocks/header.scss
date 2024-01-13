@@ -97,11 +97,11 @@
   }
 }
 
-.no--js {
+.js-no {
   display: none;
 }
 
-.header__wrraper.header--no-js {
+.header__wrraper.no-js-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 
@@ -111,7 +111,7 @@
   }
 }
 
-.header--no-js {
+.no-js-header {
   & .header__logo-sign {
     display: grid;
     grid-template-columns: 2 / 3;

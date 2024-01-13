@@ -47,7 +47,7 @@
   }
 }
 
-.site-list.site-list--no-js {
+.site-list.no-js-site-list {
   position: static;
   transform: translateY(0);
   grid-column: 1 / -1;
@@ -90,7 +90,7 @@
   }
 }
 
-.site-list__item--active {
+.site-list__link--active {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-primary-500;
   }
@@ -100,7 +100,7 @@
   @media (min-width: $desktop-width) {
     color: $color-white;
 
-    &.site-list__item--active {
+    &.site-list__link--active {
       border-bottom: 2px solid $color-white;
     }
   }

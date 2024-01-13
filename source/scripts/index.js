@@ -4,9 +4,9 @@ window.addEventListener('load', () => {
   const headerWr = document.querySelector('.header__wrraper');
 
   navMenu.classList.remove('is-active');
-  button.classList.remove('no--js');
-  headerWr.classList.remove('header--no-js');
-  navMenu.classList.remove('site-list--no-js');
+  button.classList.remove('js-no');
+  headerWr.classList.remove('no-js-header');
+  navMenu.classList.remove('no-js-site-list');
 
   button.addEventListener('click', (e) => {
     e.preventDefault();

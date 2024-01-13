@@ -1,0 +1,49 @@
+.main__container {
+  padding-top: 27px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 64px;
+    padding-bottom: 50px;
+  }
+}
+
+.main-heading {
+  font-family: $font-heading;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.main__subheading {
+  margin: 0;
+  padding: 39px 10px 0 0;
+  text-transform: uppercase;
+  font-family: $font-heading;
+  color: $color-black;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 55px 240px 0 0;
+
+    @media (min-width: $desktop-width) {
+      padding: 55px 840px 0 0;
+    }
+  }
+}

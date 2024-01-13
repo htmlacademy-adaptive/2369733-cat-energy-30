@@ -8,9 +8,18 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  padding: 11px 12px;
+  padding: 10px 12px;
   display: inline-block;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-primary-800;
+  }
+
+  &:active {
+    color: $color-white-activ;
+  }
 }
 
 .button--secondary {

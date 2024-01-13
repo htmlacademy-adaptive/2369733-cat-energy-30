@@ -9,3 +9,27 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+html {
+  min-width: 320px;
+  height: 100%;
+
+  font-family: $font-body;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-gray-700;
+  background-color: $color-white;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}

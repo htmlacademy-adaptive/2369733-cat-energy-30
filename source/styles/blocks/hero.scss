@@ -5,14 +5,15 @@
 
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: auto 320px;
+  background-size: auto 302px;
   background-image:
     linear-gradient($color-primary-500--opacity 302px, $color-white 302px),
     image-set(
-      url("../../images/background/index-background-mobile@1x.jpg") 1x type("image/jpeg"),
-      url("../../images/background/index-background-mobile@2x.jpg") 2x type("image/jpeg"),
       url("../../images/background/index-background-mobile@1x.webp") 1x type("image/webp"),
-      url("../../images/background/index-background-mobile@2x.webp") 2x type("image/webp"));
+      url("../../images/background/index-background-mobile@2x.webp") 2x type("image/webp"),
+      url("../../images/background/index-background-mobile@1x.jpg") 1x type("image/jpeg"),
+      url("../../images/background/index-background-mobile@2x.jpg") 2x type("image/jpeg")),
+    linear-gradient(to right, $color-gray-700 50%, $color-gray-700 50% 100%);
 
   @media (min-width: $tablet-width) {
     color: $color-black;

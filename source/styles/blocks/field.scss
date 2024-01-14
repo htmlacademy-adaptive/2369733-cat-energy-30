@@ -1,13 +1,10 @@
 .field {
   position: relative;
-
   display: grid;
   grid-template-columns: max-content 1fr;
   align-items: center;
   gap: 14px;
-
   color: $color-gray-700;
-
   font-family: $font-heading;
   font-size: 16px;
   font-weight: 400;
@@ -16,7 +13,6 @@
 
   @media (min-width: $tablet-width) {
     gap: 14px;
-
     font-size: 20px;
   }
 }
@@ -24,10 +20,8 @@
 .field__input {
   min-width: 100px;
   padding: 12px 14px;
-
   color: $color-gray-700;
   border: 1px solid $color-gray-150;
-
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -69,7 +63,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 10px 18px;
-
     font-size: 20px;
     line-height: 30px;
 

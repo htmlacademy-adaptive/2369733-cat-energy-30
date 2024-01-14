@@ -74,14 +74,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
-
     border: 1px solid $color-gray-250;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     grid-column: 1 / -2;
-
     border: none;
   }
 }

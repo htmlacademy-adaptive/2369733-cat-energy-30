@@ -1,7 +1,6 @@
 .card {
   position: relative;
   z-index: 0;
-
   padding-top: 19px;
   padding-bottom: 24px;
   display: grid;
@@ -78,14 +77,14 @@
   text-decoration: none;
 
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   bottom: 80px;
-  //   left: 0;
-  // }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 35px;
@@ -107,7 +106,6 @@
 .card__heading {
   margin: 0;
   padding-top: 3px;
-
   font-family: $font-heading;
   font-size: 16px;
   font-weight: 400;
@@ -130,15 +128,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2px;
-
   color: $color-gray-700;
-
   font-size: 12px;
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
-
     font-size: 16px;
     line-height: 24px;
   }
@@ -162,7 +157,6 @@
 .card__definition {
   margin: 0;
   padding-right: 1px;
-
   text-align: right;
 
   @media (min-width: $tablet-width) {
@@ -179,6 +173,5 @@
 .card__button {
   position: relative;
   z-index: 1;
-
   grid-area: button;
 }

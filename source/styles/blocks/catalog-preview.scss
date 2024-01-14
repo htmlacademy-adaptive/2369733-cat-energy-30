@@ -30,7 +30,6 @@
   padding: 24px 34px 19px 20px;
   background-color: $color-gray-50;
 
-
   @media (min-width: $tablet-width) {
     padding: 71px 314px 56px 52px;
   }
@@ -51,8 +50,6 @@
   margin: 0;
   display: flex;
   align-items: center;
-
-
   min-height: 47px;
   margin-bottom: 25px;
   padding-left: 70px;
@@ -82,10 +79,8 @@
     position: absolute;
     left: 0;
     top: 0;
-
     width: 50px;
     height: 50px;
-
     background-color: $color-primary-500;
     border-radius: 50%;
 
@@ -93,7 +88,6 @@
       top: calc(50% - 95px);
       right: 62px;
       left: auto;
-
       width: 200px;
       height: 200px;
     }
@@ -102,7 +96,6 @@
       top: calc(50% - 50px);
       right: auto;
       left: 0;
-
       width: 100px;
       height: 100px;
     }
@@ -117,10 +110,8 @@
   &::after {
     top: -3px;
     left: 7px;
-
     width: 36px;
     height: 50px;
-
     background-image: url("../../images/icons/stack.svg#cat-slim");
 
     @media (min-width: $tablet-width) {
@@ -134,7 +125,6 @@
     @media (min-width: $desktop-width) {
       top: calc(50% - 54px);
       left: 15px;
-
       width: 70px;
       height: 97px;
     }
@@ -145,17 +135,14 @@
   &::after {
     top: 11px;
     left: -10px;
-
     width: 67px;
     height: 28px;
-
     background-image: url("../../images/icons/stack.svg#cat-pro");
 
     @media (min-width: $tablet-width) {
       top: calc(50% - 51px);
       right: 28px;
       left: auto;
-
       width: 268px;
       height: 112px;
     }
@@ -163,7 +150,6 @@
     @media (min-width: $desktop-width) {
       top: calc(50% - 30px);
       left: -19px;
-
       width: 134px;
       height: 56px;
     }
@@ -174,7 +160,6 @@
   margin: 0;
   margin-bottom: 19px;
   padding-bottom: 22px;
-
   color: $color-gray-700;
   border-bottom: 1px solid $color-gray-200;
 
@@ -184,7 +169,6 @@
     line-height: 24px;
     margin-bottom: 54px;
     padding: 0;
-
     border: none;
   }
 

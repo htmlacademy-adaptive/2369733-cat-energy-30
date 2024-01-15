@@ -46,7 +46,8 @@
   &::after {
     content: "";
     bottom: 55px;
-    left: 44%;
+    left: 50%;
+    transform: translateX(-15px);
     position: absolute;
     width: 30px;
     height: 2px;
@@ -55,17 +56,20 @@
     @media (min-width: $tablet-width) {
       bottom: 125px;
       width: 60px;
-      left: 38%;
+      transform: translateX(-30px);
     }
 
     @media (min-width: $desktop-width) {
       bottom: 116px;
-      left: 33%;
     }
   }
 
   &::after {
-    transform: rotate(90deg);
+    transform: translateX(-15px) rotate(90deg);
+
+    @media (min-width: $tablet-width) {
+      transform: translateX(-30px) rotate(90deg);
+    }
   }
 }
 
@@ -81,6 +85,7 @@
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 82px;
+    min-height: 36px;
   }
 
   @media (min-width: $desktop-width) {

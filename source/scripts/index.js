@@ -2,11 +2,13 @@ window.addEventListener('load', () => {
   const button = document.querySelector('.js-burger');
   const navMenu = document.querySelector('.js-nav-menu');
   const headerWr = document.querySelector('.header__wrraper');
+  const header = document.querySelector('.header');
 
   navMenu.classList.remove('is-active');
-  button.classList.remove('js-no');
-  headerWr.classList.remove('no-js-header');
-  navMenu.classList.remove('no-js-site-list');
+  button.classList.remove('no-js');
+  headerWr.classList.remove('no-js');
+  navMenu.classList.remove('no-js');
+  header.classList.remove('no-js');
 
   button.addEventListener('click', (e) => {
     e.preventDefault();

@@ -175,8 +175,15 @@
   text-transform: uppercase;
 }
 
-.card__button {
-  position: relative;
-  z-index: 1;
+.card__wrapper {
   grid-area: button;
+}
+
+.card__button {
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
 }

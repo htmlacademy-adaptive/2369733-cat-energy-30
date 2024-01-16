@@ -2,10 +2,6 @@
   position: relative;
   padding: 13px 0 10px;
 
-  &.no-js {
-    padding: 13px 0 0;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 25px;
@@ -99,6 +95,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.header.no-js {
+  padding: 13px 0 0;
 }
 
 .header__toggler.no-js {

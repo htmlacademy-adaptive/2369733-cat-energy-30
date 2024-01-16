@@ -44,14 +44,14 @@
     font-size: 20px;
     line-height: normal;
     color: $color-black;
-    width: 50%;
   }
 }
 
-.site-list.no-js-site-list {
+.site-list.no-js {
   position: static;
   transform: translateY(0);
   grid-column: 1 / -1;
+  margin-top: 15px;
 }
 
 .site-list__menu {
@@ -104,24 +104,6 @@
 
     &.site-list__link--active {
       border-bottom: 2px solid $color-white;
-    }
-  }
-}
-
-.site-list__menu--index {
-  @media (min-width: $desktop-width) {
-    position: relative;
-
-    &::before {
-      position: absolute;
-
-      content: "";
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: $color-primary-500--opacity;
-      z-index: -4;
     }
   }
 }

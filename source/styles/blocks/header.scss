@@ -2,7 +2,6 @@
   position: relative;
   padding: 13px 0 10px;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     padding-top: 25px;
@@ -12,6 +11,7 @@
     padding-top: 55px;
   }
 }
+
 
 .header--catalog {
   @media (max-width: $mobile-width) {
@@ -97,11 +97,15 @@
   }
 }
 
-.js-no {
+.header.no-js {
+  padding: 13px 0 0;
+}
+
+.header__toggler.no-js {
   display: none;
 }
 
-.header__wrraper.no-js-header {
+.header__wrraper.no-js {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 
@@ -111,7 +115,7 @@
   }
 }
 
-.no-js-header {
+.no-js {
   & .header__logo-sign {
     display: grid;
     grid-template-columns: 2 / 3;

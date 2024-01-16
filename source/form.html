@@ -10,13 +10,15 @@
   <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/source/fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="/source/fonts/oswald/oswaldregular.woff2" as="font">
 </head>
 
 <body>
 
   <header class="header">
 
-    <div class="header__wrraper no-js-header container">
+    <div class="header__wrraper no-js container">
       <a class="header__logo logo" href="index.html">
         <picture>
           <source width="202" height="59" media="(min-width: 1240px)" srcset="images/logo-desktop.svg"
@@ -29,12 +31,12 @@
       <a class="header__logo-sign" href="index.html" tabindex="-1">
         <img src="./images/logo-sign.svg" width="101" height="19" aria-current="page" alt="Логотип Cat Energy.">
       </a>
-      <button class="header__toggler js-no js-burger" aria-label="бургер меню" type="button">
+      <button class="header__toggler no-js js-burger" aria-label="бургер меню" type="button">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="site-list no-js-site-list is-active js-nav-menu">
+      <nav class="site-list no-js is-active js-nav-menu">
         <ul class="site-list__menu">
           <li class="site-list__item ">
             <a class="site-list__link" href="index.html">главная</a>
@@ -128,7 +130,7 @@
               <li class="field-group__item field-group__item--liaison">
                 <label class="field">
                   <span class="field__lead">Телефон:*</span>
-                  <input class="field__input field__input--icon" name="phone" type="tel" placeholder="8 (960) 900-60-90"
+                  <input class="field__input field__input--icon" name="phone" type="number" placeholder="8 (960) 900-60-90"
                     required>
                   <svg class="field__icon" width="16" height="16" fill="none" stroke="black" viewBox="0 0 16 16"
                     aria-hidden="true">

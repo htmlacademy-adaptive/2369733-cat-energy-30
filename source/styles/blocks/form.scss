@@ -57,7 +57,6 @@
 .form__group--target {
   margin-right: -21px;
   margin-left: -21px;
-
   border: 1px solid $color-gray-200;
 
   @media (min-width: $tablet-width) {
@@ -78,7 +77,6 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
-
     text-align: left;
   }
 

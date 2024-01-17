@@ -1,6 +1,8 @@
 .footer {
   padding: 31px 0 50px;
   background-color: $color-gray-50;
+  align-self: flex-end;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 50px 0 50px;

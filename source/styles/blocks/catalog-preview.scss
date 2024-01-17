@@ -27,7 +27,7 @@
 
 .catalog-preview__item {
   position: relative;
-  padding: 24px 34px 19px 20px;
+  padding: 24px 34px 22px 20px;
   background-color: $color-gray-50;
 
   @media (min-width: $tablet-width) {
@@ -178,9 +178,6 @@
 }
 
 .catalog-preview__link {
-  padding: 5px 0;
-  padding-right: 38px;
-
   font-family: $font-heading;
   font-size: 16px;
   line-height: 16px;
@@ -189,52 +186,42 @@
   color: $color-black;
   position: relative;
   width: max-content;
+  flex-wrap: wrap;
+  padding-right: 50px;
+
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
-    padding-right: 46px;
-  }
-
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    transform: translateY(-50%);
-    transition: ease 0.3s;
+    padding-right: 60px;
   }
 
   &::after {
-    width: 15px;
-    height: 12px;
+    content: "";
+    position: absolute;
+    display: block;
     background-image: url("../../images/icons/stack.svg#arrow");
+    background-position: -8px;
     background-repeat: no-repeat;
+    width: 33px;
+    height: 12px;
     top: 50%;
-    right: -7px;
-  }
+    transform: translateY(-6px);
 
-  &::before {
-    width: 18px;
-    height: 2px;
-    background-color: $color-black;
-    top: 50%;
-    right: 3px;
+    right: 0;
+    transition: ease 0.3s;
   }
 
   &:hover {
     opacity: 0.6;
 
-    &::before {
-      width: 26px;
-      right: -8px;
-    }
-
     &::after {
-      right: -16px;
+      background-position: 0;
     }
-  }
 
-  &:active {
-    opacity: 0.3;
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

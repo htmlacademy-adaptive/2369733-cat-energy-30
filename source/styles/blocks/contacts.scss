@@ -20,8 +20,7 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 58px 40px 60px;
+    padding: 58px 70px 60px;
     grid-template-columns: 172px 172px;
     justify-content: space-between;
   }

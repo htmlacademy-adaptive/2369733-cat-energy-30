@@ -11,7 +11,10 @@
   }
 }
 
-.catalog-preview__container {
+.catalog-preview__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: grid;
   gap: 20px;
 

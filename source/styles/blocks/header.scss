@@ -52,7 +52,7 @@
     opacity: 0.5;
   }
 
-  &:active {
+  &:active:not(:hover) {
     opacity: 0.3;
   }
 
@@ -83,7 +83,7 @@
   &.is-active {
     span {
       &:nth-child(1) {
-        transform: translate(-50%, 10px) rotate(-46deg);
+        transform: translate(-34%, 8px) rotate(-47deg);
       }
 
       &:nth-child(2) {
@@ -91,7 +91,7 @@
       }
 
       &:nth-child(3) {
-        transform: translate(-50%, -10px) rotate(46deg);
+        transform: translate(-31%, -8px) rotate(47deg);
       }
     }
   }

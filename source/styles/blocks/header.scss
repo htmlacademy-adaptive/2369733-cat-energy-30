@@ -1,10 +1,10 @@
 .header {
   position: relative;
-  padding: 13px 0 10px;
+  padding: 13px 0 12px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 25px;
+    padding: 25px 0 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,7 +21,10 @@
 
 .header__logo-sign {
   text-decoration: none;
-  padding-top: 10px;
+  width: 101px;
+  height: 19px;
+  margin: 10px 3px 0 0;
+
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -35,12 +38,13 @@
 }
 
 .header__toggler {
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 16px;
   background: transparent;
   border: none;
-  padding: 20px;
-  padding-right: 5px;
+  padding: 20px 6px 20px 20px;
+  margin-left: 5px;
+
   position: relative;
   cursor: pointer;
 
@@ -64,7 +68,7 @@
     transform: translateX(-50%);
 
     &:nth-child(1) {
-      top: 7px;
+      top: 9px;
     }
 
     &:nth-child(2) {
@@ -72,7 +76,7 @@
     }
 
     &:nth-child(3) {
-      top: 27px;
+      top: 25px;
     }
   }
 

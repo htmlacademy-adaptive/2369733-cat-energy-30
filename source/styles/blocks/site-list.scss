@@ -10,7 +10,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transition: 0.3s ease;
   z-index: 2;
   transform: translateY(-60%);
 
@@ -44,7 +43,6 @@
     font-size: 20px;
     line-height: normal;
     color: $color-black;
-    width: 560px;
   }
 }
 
@@ -65,6 +63,13 @@
     display: flex;
     column-gap: 33px;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: -1.6vw;
+    width: 502px;
   }
 }
 

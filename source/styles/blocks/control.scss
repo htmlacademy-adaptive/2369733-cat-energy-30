@@ -87,8 +87,10 @@
     background-repeat: no-repeat;
     background-position: calc(50% + 1px) 50%;
     background-image: url("../../images/icons/stack.svg#check");
+    height: 15px;
 
     @media (min-width: $tablet-width) {
+      height: 30px;
       background-size: 24px auto;
     }
   }

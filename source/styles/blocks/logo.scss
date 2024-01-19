@@ -1,18 +1,4 @@
 .logo {
-  text-decoration: none;
-  width: 33px;
-  height: 38px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 174px;
-    height: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 202px;
-    height: 59px;
-  }
-
   &:link:hover {
     opacity: 0.8;
   }
